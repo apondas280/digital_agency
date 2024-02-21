@@ -1,0 +1,85 @@
+.att-filter {
+  gap: 18px;
+  padding-bottom: 30px;
+  .att-filter-option {
+    flex: 0 0 auto;
+    min-width: 350px;
+    @media screen and (max-width: 991px) {
+      min-width: 335px !important;
+    }
+    @media screen and (max-width: 767px) {
+      min-width: 300px !important;
+    }
+    .select2 {
+      width: 100%;
+    }
+  }
+  .att-filter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 125px;
+    height: 40px;
+    background-color: $eColor_Blackish;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: $fw_Medium;
+    color: #fff;
+  }
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: initial !important;
+}
+
+// Attendance report banner
+.att-report-banner {
+  background-color: #eff0f5;
+  padding: 25px 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  gap: 20px;
+  @media screen and (max-width: 767px) {
+    padding: 25px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: $eColor_Blue;
+  }
+  .att-report-summary {
+    .title {
+      font-size: 24px;
+      font-weight: $fw_SemiBold;
+      line-height: 35px;
+      color: $eColor_Blueish;
+      padding-bottom: 5px;
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
+      }
+    }
+    .summary-item {
+      font-size: 15px;
+      font-weight: $fw_SemiBold;
+      line-height: 23px;
+      color: $eColor_Blueish;
+      padding-bottom: 5px;
+      span {
+        font-weight: $fw_Medium;
+        color: $eColor_Blackish;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .att-banner-img {
+    max-width: 170px;
+  }
+}
